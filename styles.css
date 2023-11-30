@@ -1,0 +1,660 @@
+:root {
+  --brown: #903622;
+  --bg: #0a0a0a;
+  --shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+}
+
+body {
+  font-size: 1.2rem;
+  font-family: "Poppins", sans-serif;
+}
+
+.no-webp .hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("./img/Groom&Bride-01.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+}
+
+.webp .hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("./img/Groom&Bride-01.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+}
+
+.hero {
+  position: relative;
+  min-height: 100vh;
+}
+
+.hero h1 {
+  font-family: "Dancing Script", cursive;
+  font-size: 6.5rem;
+  font-weight: 700;
+}
+
+.hero h1,
+.hero h4,
+hero p {
+  text-shadow: var(--shadow);
+}
+
+.hero a {
+  color: var(--brown);
+  background-color: white;
+  box-shadow: var(--shadow);
+}
+
+.hero a:hover {
+  color: white;
+  background-color: var(--brown);
+}
+
+.instruction {
+  font-size: 1rem;
+}
+
+.mynav {
+  /* background-color: rgb(255, 255, 255, 0.3) !important;
+  backdrop-filter: blur(4px); */
+  background-color: rgb(255, 255, 255) !important;
+}
+
+.mynav .offcanvas {
+  height: 100vh;
+}
+
+.nav-logo {
+  font-family: "Dancing Script", cursive;
+  font-weight: bold;
+  font-size: 2.5rem;
+}
+
+.nav-logo span {
+  font-family: "Dancing Script", cursive;
+  font-weight: normal;
+  font-size: 1.2rem;
+}
+
+.mynav .nav-link {
+  text-transform: uppercase;
+}
+
+.home {
+  background-image: url("./img/bg-floral.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  margin-top: -5.4rem;
+  padding-top: 15rem;
+  padding-bottom: 8rem;
+}
+
+.home h2,
+.info h2,
+.story h2,
+.gallery h2,
+.rsvp h2,
+.wishes h2 {
+  color: var(--brown);
+  font-family: "Dancing Script", cursive;
+  font-size: 5rem;
+  font-weight: 700;
+}
+
+.home h3 {
+  color: #444;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.home p {
+  color: #666;
+  font-size: 1.1rem;
+}
+
+.home .couple {
+  margin-top: 100px;
+}
+
+.home .couple h3 {
+  color: var(--brown);
+  font-family: "Dancing Script", cursive;
+  font-size: 2.4rem;
+}
+
+.home .couple img {
+  width: 300px;
+}
+
+.info {
+  background-color: var(--bg);
+  color: white;
+  padding-top: 10rem;
+  padding-bottom: 8rem;
+}
+
+.info .alamat {
+  font-size: 1.1rem;
+}
+
+.info .description {
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.info .card {
+  background: rgba(255, 255, 255, 0.25) !important;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  color: white !important;
+}
+
+.info .card-header {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.18);
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+}
+
+.info .card-body {
+  font-size: 1rem;
+}
+
+.info .card-footer {
+  border-top: 1px solid rgba(255, 255, 255, 0.18);
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.story,
+.gallery,
+.rsvp,
+.wishes {
+  padding-top: 10rem;
+  padding-bottom: 8rem;
+}
+
+.story span,
+.gallery span {
+  text-transform: uppercase;
+  color: #666;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.story p,
+.gallery p,
+.rsvp p,
+.wishes {
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.card-body h4 {
+  color: #444;
+  font-weight: 500;
+}
+
+.gallery {
+  background-color: #f5f5f5;
+}
+
+.gallery-container {
+  margin-top: 2.5rem;
+}
+
+.no-webp .groomphoto1 {
+  height: 624px;
+  background-color: #0a0a0a;
+  background-image: url("./img/Groom&Bride-06.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.webp .groomphoto1 {
+  height: 624px;
+  background-color: #0a0a0a;
+  background-image: url("./img/Groom&Bride-06.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.no-webp .groomphoto2 {
+  height: 300px;
+  background-color: #0a0a0a;
+  background-image: url("./img/Groom&Bride-03.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.webp .groomphoto2 {
+  height: 300px;
+  background-color: #0a0a0a;
+  background-image: url("./img/Groom&Bride-03.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.no-webp .groomphoto3 {
+  height: 300px;
+  background-color: #0a0a0a;
+  background-image: url("./img/Groom&Bride-07.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.webp .groomphoto3 {
+  height: 300px;
+  background-color: #0a0a0a;
+  background-image: url("./img/Groom&Bride-07.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.no-webp .groomphoto4 {
+  height: 300px;
+  background-color: #0a0a0a;
+  background-image: url("./img/Groom&Bride-01.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.webp .groomphoto4 {
+  height: 300px;
+  background-color: #0a0a0a;
+  background-image: url("./img/Groom&Bride-01.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.no-webp .groomphoto5 {
+  height: 300px;
+  background-color: #0a0a0a;
+  background-image: url("./img/Groom&Bride-05.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.webp .groomphoto5 {
+  height: 300px;
+  background-color: #0a0a0a;
+  background-image: url("./img/Groom&Bride-05.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.no-webp .groomphoto6 {
+  height: 300px;
+  background-color: #0a0a0a;
+  background-image: url("./img/Groom&Bride-08.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.webp .groomphoto6 {
+  height: 300px;
+  background-color: #0a0a0a;
+  background-image: url("./img/Groom&Bride-08.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.no-webp .groomphoto7 {
+  height: 300px;
+  background-color: #0a0a0a;
+  background-image: url("./img/Groom&Bride-02.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.webp .groomphoto7 {
+  height: 300px;
+  background-color: #0a0a0a;
+  background-image: url("./img/Groom&Bride-02.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.no-webp .groomphoto8 {
+  height: 624px;
+  background-color: #0a0a0a;
+  background-image: url("./img/Groom&Bride-04.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.webp .groomphoto8 {
+  height: 624px;
+  background-color: #0a0a0a;
+  background-image: url("./img/Groom&Bride-04.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.rsvp {
+  background-color: var(--bg);
+}
+
+.rsvp h2 {
+  font-size: 4.5rem;
+}
+
+.rsvp p {
+  color: white;
+}
+
+.rsvp label {
+  color: white;
+}
+
+.rsvp button {
+  background-color: var(--brown);
+  border: 1px solid var(--brown);
+  padding-inline: 30px;
+}
+
+.rsvp button:hover {
+  background-color: white;
+  color: var(--brown);
+  border: 1px solid white;
+}
+
+footer {
+  padding: 3rem;
+  background-color: var(--brown);
+  color: white;
+}
+
+footer a {
+  color: var(--bg);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: white;
+}
+
+footer li {
+  list-style: none;
+  display: inline;
+  margin: 0.5rem;
+}
+
+.card {
+  border-radius: 0;
+}
+
+.card-img-top {
+  border-radius: 0;
+}
+
+/* The actual timeline (the vertical ruler) */
+.main-timeline-2 {
+  padding: 1.4rem 0;
+  margin-top: 2.5rem;
+  position: relative;
+}
+
+/* The actual timeline (the vertical ruler) */
+.main-timeline-2::after {
+  content: "";
+  position: absolute;
+  width: 1.5px;
+  background-color: #999;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+
+/* Container around content */
+.timeline-2 {
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+}
+
+/* The circles on the timeline */
+.timeline-2::after {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -10px;
+  background-color: #999;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/* Place the container to the left */
+.left-2 {
+  padding: 0px 40px 20px 0px;
+  left: 0;
+}
+
+/* Place the container to the right */
+.right-2 {
+  padding: 0px 0px 20px 40px;
+  left: 50%;
+}
+
+/* Add arrows to the left container (pointing right) */
+.left-2::before {
+  content: " ";
+  position: absolute;
+  top: 18px;
+  z-index: 1;
+  right: 30px;
+  border: medium solid white;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent white;
+}
+
+/* Add arrows to the right container (pointing left) */
+.right-2::before {
+  content: " ";
+  position: absolute;
+  top: 18px;
+  z-index: 1;
+  left: 30px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+}
+
+/* Fix the circle for containers on the right side */
+.right-2::after {
+  left: -15px;
+}
+
+/* Media queries - Responsive timeline on screens less than 600px wide */
+@media screen and (max-width: 600px) {
+  /* Place the timelime to the left */
+  .main-timeline-2::after {
+    left: 31px;
+  }
+
+  /* Full-width containers */
+  .timeline-2 {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+  }
+
+  /* Make sure that all arrows are pointing leftwards */
+  .timeline-2::before {
+    left: 60px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+  }
+
+  /* Make sure all circles are at the same spot */
+  .left-2::after,
+  .right-2::after {
+    left: 16px;
+  }
+
+  .left-2::before {
+    right: auto;
+  }
+
+  /* Make all right containers behave like the left ones */
+  .right-2 {
+    left: 0%;
+  }
+}
+
+/* Media query */
+
+/* Laptop */
+@media (max-width: 992px) {
+  html {
+    font-size: 85%;
+  }
+
+  .simply-countdown > .simply-section {
+    padding: 50px;
+  }
+
+  .and {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+
+  .no-webp .groomphoto1,
+  .no-webp .groomphoto2,
+  .no-webp .groomphoto3,
+  .no-webp .groomphoto4,
+  .no-webp .groomphoto5,
+  .no-webp .groomphoto6,
+  .no-webp .groomphoto7,
+  .no-webp .groomphoto8 {
+    height: 600px;
+  }
+
+  .webp .groomphoto1,
+  .webp .groomphoto2,
+  .webp .groomphoto3,
+  .webp .groomphoto4,
+  .webp .groomphoto5,
+  .webp .groomphoto6,
+  .webp .groomphoto7,
+  .webp .groomphoto8 {
+    height: 600px;
+  }
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+  html {
+    font-size: 75%;
+  }
+
+  .simply-countdown > .simply-section {
+    padding: 40px;
+    margin: 5px;
+  }
+
+  .mynav .nav-link {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .sticky-top {
+    overflow: hidden;
+  }
+
+  .home .couple img {
+    width: 250px;
+  }
+
+  .and {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+
+  .no-webp .groomphoto1,
+  .no-webp .groomphoto2,
+  .no-webp .groomphoto3,
+  .no-webp .groomphoto4,
+  .no-webp .groomphoto5,
+  .no-webp .groomphoto6,
+  .no-webp .groomphoto7,
+  .no-webp .groomphoto8 {
+    height: 500px;
+  }
+
+  .webp .groomphoto1,
+  .webp .groomphoto2,
+  .webp .groomphoto3,
+  .webp .groomphoto4,
+  .webp .groomphoto5,
+  .webp .groomphoto6,
+  .webp .groomphoto7,
+  .webp .groomphoto8 {
+    height: 500px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+  html {
+    font-size: 65%;
+  }
+
+  .simply-countdown > .simply-section {
+    padding: 35px;
+    margin: 3px;
+  }
+
+  .sticky-top {
+    overflow: hidden;
+  }
+
+  .home .couple img {
+    width: 200px;
+  }
+
+  .and {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+}

@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Wedding Invitation</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600;700&family=Poppins:wght@100;300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- simplyCountdown -->
+    <link
+      rel="stylesheet"
+      href="./simplyCountdown/simplyCountdown.theme.default.css"
+    />
+    <script src="./simplyCountdown/simplyCountdown.min.js"></script>
+
+    <!-- Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Hero Section -->
+    <section
+      id="hero"
+      class="hero w-100 h-100 p-3 mx-auto text-center d-flex justify-content-center align-items-center text-white"
+    >
+      <main>
+        <h4>Dear our families and friends,</h4>
+        <h1>Scott & Greta</h1>
+        <p>We will get married in:</p>
+        <div class="simply-countdown"></div>
+        <a
+          href="#home"
+          class="btn btn-lg rounded-0 mt-3"
+          onclick="enableScroll()"
+          >See Invitation</a
+        >
+        <p class="instruction mt-4">Click the button to see the details</p>
+      </main>
+    </section>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-md bg-transparent sticky-top mynav">
+      <div class="container">
+        <a class="navbar-brand nav-logo" href="#">S <span>&</span> G</a>
+        <button
+          class="navbar-toggler border-0"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="offcanvas offcanvas-end"
+          tabindex="-1"
+          id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel"
+        >
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title nav-logo" id="offcanvasNavbarLabel">
+              S <span>&</span> G
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <div class="navbar-nav ms-auto">
+              <a class="nav-link" href="#home">Home</a>
+              <a class="nav-link" href="#info">Info</a>
+              <a class="nav-link" href="#story">Story</a>
+              <a class="nav-link" href="#gallery">Gallery</a>
+              <a class="nav-link" href="#rsvp">RSVP</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="home">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8 col-10 text-center">
+            <h2>The Wedding</h2>
+            <h3>On 25 November 2025 New York City, USA.</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo nam
+              optio voluptatibus impedit quidem sequi non nihil vitae enim culpa
+              consectetur voluptatum voluptates porro in modi, incidunt, eos
+              sint neque!
+            </p>
+          </div>
+        </div>
+
+        <div class="row couple">
+          <div class="col-lg-4">
+            <div class="row text-center justify-content-center">
+              <picture>
+                <source srcset="./img/Groom.webp" type="image/webp" />
+                <source srcset="./img/Groom.jpg" type="image/jpeg" />
+                <img
+                  src="./img/Groom.jpg"
+                  alt="Scott"
+                  class="img-responsive rounded-circle"
+                />
+              </picture>
+              <div class="col-md-8 col-10 text-center">
+                <h3 class="mt-3">Scott</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Dignissimos porro quae, harum
+                </p>
+                <p>
+                  Son of Mr. Loren <br />
+                  and <br />
+                  Mrs. Ipsum
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 align-self-center and">
+            <div class="row text-center">
+              <h2>&</h2>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="row text-center justify-content-center">
+              <picture>
+                <source srcset="./img/Bride.webp" type="image/webp" />
+                <source srcset="./img/Bride.jpg" type="image/jpeg" />
+                <img
+                  src="./img/Bride.jpg"
+                  alt="Scott"
+                  class="img-responsive rounded-circle"
+                />
+              </picture>
+              <div class="col-md-8 col-10 text-center">
+                <h3 class="mt-3">Greta</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Dignissimos porro quae, harum
+                </p>
+                <p>
+                  Daughter of Mr. Loren <br />
+                  and <br />
+                  Mrs. Ipsum
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Info Section -->
+    <section id="info" class="info">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8 col-10 text-center">
+            <h2>When & Where</h2>
+            <p class="alamat">
+              Venue: New York Public Library <br />
+              476 5th Ave, New York, NY 10018, USA
+            </p>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.401996706439!2d-73.9822534!3d40.753182300000006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2590099a8a8a9%3A0x3b51df6e509a734c!2sNew%20York%20Public%20Library%20-%20Stephen%20A.%20Schwarzman%20Building!5e0!3m2!1sen!2sid!4v1701235336774!5m2!1sen!2sid"
+              width="100%"
+              height="300"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+            <a
+              href="https://maps.app.goo.gl/F1Wvjcf5X6ffDAeW7"
+              target="_blank"
+              class="btn btn-light btn-sm my-3"
+              >Open maps</a
+            >
+            <p class="description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Molestiae, eaque minus reprehenderit et corporis magni ullam
+              quibusdam possimus accusamus
+            </p>
+          </div>
+        </div>
+
+        <div class="row justify-content-center mt-4">
+          <div class="col-md-5 col-10">
+            <div class="card text-center text-bg-light mb-5">
+              <div class="card-header">The Ceremony</div>
+              <div class="card-body">
+                <div class="row justify-content-center">
+                  <div class="col-md-6 mt-3 mb-3">
+                    <i class="bi bi-clock d-block"></i>
+                    <span>08.00 - 10.00</span>
+                  </div>
+                  <div class="col-md-6 mt-3 mb-3">
+                    <i class="bi bi-calendar2-week d-block"></i>
+                    <span>Monday, 25 November 2025</span>
+                  </div>
+                </div>
+              </div>
+              <div class="card-footer">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              </div>
+            </div>
+          </div>
+          <div class="col-md-5 col-10">
+            <div class="card text-center text-bg-light">
+              <div class="card-header">The Afterparty</div>
+              <div class="card-body">
+                <div class="row justify-content-center">
+                  <div class="col-md-6 mt-3 mb-3">
+                    <i class="bi bi-clock d-block"></i>
+                    <span>11.00 - End</span>
+                  </div>
+                  <div class="col-md-6 mt-3 mb-3">
+                    <i class="bi bi-calendar2-week d-block"></i>
+                    <span>Monday, 25 November 2025</span>
+                  </div>
+                </div>
+              </div>
+              <div class="card-footer">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Story Section -->
+    <section id="story" class="story">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8 col-10 text-center">
+            <span>How our love story began</span>
+            <h2>How We Met</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed fugit
+              voluptates dicta accusantium illo amet.
+            </p>
+          </div>
+        </div>
+        <div class="main-timeline-2">
+          <div class="timeline-2 left-2">
+            <div class="card">
+              <img
+                src="https://picsum.photos/1000/400.webp?random=1"
+                class="card-img-top"
+                alt="Responsive image"
+              />
+              <div class="card-body p-4">
+                <h4 class="mb-4">Ut enim ad minim veniam</h4>
+                <p class="text-muted mb-4">
+                  <i class="far fa-clock" aria-hidden="true"></i> 2017
+                </p>
+                <p class="mb-0">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="timeline-2 right-2">
+            <div class="card">
+              <img
+                src="https://picsum.photos/1000/400.webp?random=2"
+                class="card-img-top"
+                alt="Responsive image"
+              />
+              <div class="card-body p-4">
+                <h4 class="mb-4">Duis aute irure dolor</h4>
+                <p class="text-muted mb-4">
+                  <i class="far fa-clock" aria-hidden="true"></i> 2016
+                </p>
+                <p class="mb-0">
+                  Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                  accusantium doloremque laudantium, totam rem aperiam, eaque
+                  ipsa quae ab illo inventore veritatis et quasi architecto
+                  beatae vitae dicta sunt explicabo.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="timeline-2 left-2">
+            <div class="card">
+              <img
+                src="https://picsum.photos/1000/400.webp?random=3"
+                class="card-img-top"
+                alt="Responsive image"
+              />
+              <div class="card-body p-4">
+                <h4 class="mb-4">Sed ut nihil unde omnis</h4>
+                <p class="text-muted mb-4">
+                  <i class="far fa-clock" aria-hidden="true"></i> 2015
+                </p>
+                <p class="mb-0">
+                  Neque porro quisquam est, qui dolorem ipsum quia dolor sit
+                  amet, consectetur, adipisci velit, sed quia non numquam eius
+                  modi tempora incidunt ut labore et dolore magnam aliquam
+                  quaerat voluptatem.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-8-md col-10 text-center">
+            <span>Our Memories</span>
+            <h2>Gallery Photo</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed fugit
+              voluptates dicta accusantium illo amet.
+            </p>
+          </div>
+        </div>
+
+        <div class="row row-cols-1 gallery-container">
+          <div class="col-lg-6 pb-4">
+            <a
+              href="./img/Groom&Bride-06.webp"
+              data-toggle="lightbox"
+              data-gallery="ourgallery"
+              data-caption="Scott & Greta Pre-Wedding Moment"
+            >
+              <div class="groomphoto1"></div>
+            </a>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="row">
+              <div class="col-lg-12 pb-4">
+                <a
+                  href="./img/Groom&Bride-03.webp"
+                  data-toggle="lightbox"
+                  data-gallery="ourgallery"
+                  data-caption="Scott & Greta Pre-Wedding Moment"
+                  ><div class="groomphoto2"></div
+                ></a>
+              </div>
+
+              <div class="col-lg-6 pb-4">
+                <a
+                  href="./img/Groom&Bride-07.webp"
+                  data-toggle="lightbox"
+                  data-gallery="ourgallery"
+                  data-caption="Scott & Greta Pre-Wedding Moment"
+                >
+                  <div class="groomphoto3"></div>
+                </a>
+              </div>
+
+              <div class="col-lg-6 pb-4">
+                <a
+                  href="./img/Groom&Bride-01.webp"
+                  data-toggle="lightbox"
+                  data-gallery="ourgallery"
+                  data-caption="Scott & Greta Pre-Wedding Moment"
+                >
+                  <div class="groomphoto4"></div>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 pb-4">
+            <div class="row">
+              <div class="col-lg-6 pb-4">
+                <a
+                  href="./img/Groom&Bride-05.webp"
+                  data-toggle="lightbox"
+                  data-gallery="ourgallery"
+                  data-caption="Scott & Greta Pre-Wedding Moment"
+                >
+                  <div class="groomphoto5"></div>
+                </a>
+              </div>
+
+              <div class="col-lg-6 pb-4">
+                <a
+                  href="./img/Groom&Bride-08.webp"
+                  data-toggle="lightbox"
+                  data-gallery="ourgallery"
+                  data-caption="Scott & Greta Pre-Wedding Moment"
+                >
+                  <div class="groomphoto6"></div>
+                </a>
+              </div>
+
+              <div class="col-lg-12">
+                <a
+                  href="./img/Groom&Bride-02.webp"
+                  data-toggle="lightbox"
+                  data-gallery="ourgallery"
+                  data-caption="Scott & Greta Pre-Wedding Moment"
+                >
+                  <div class="groomphoto7"></div>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 pb-4">
+            <a
+              href="./img/Groom&Bride-04.webp"
+              data-toggle="lightbox"
+              data-gallery="ourgallery"
+              data-caption="Scott & Greta Pre-Wedding Moment"
+            >
+              <div class="groomphoto8"></div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="rsvp" class="rsvp">
+      <div class="container">
+        <div class="row justify-content-center mb-3">
+          <div class="col-8-md col-10 text-center">
+            <h2>Will You Be Attending?</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed fugit
+              voluptates dicta accusantium illo amet.
+            </p>
+          </div>
+        </div>
+
+        <form
+          class="row row-cols-md-auto g-3 align-items-center justify-content-center"
+          id="confirmation-form"
+          method="POST"
+          action="https://script.google.com/macros/s/AKfycbz3gHfPjIweCcfnD_OxTJZST9DZuk7uaMHdC2A25XpSTDjyfyBtPs045xWNcwNFb9bu/exec"
+        >
+          <div class="col-12">
+            <div class="mb-3">
+              <label for="name" class="form-label">Name</label>
+              <input type="text" class="form-control" id="name" name="name" />
+            </div>
+            <div class="mb-3">
+              <label for="attend" class="form-label"
+                >Number of families attending</label
+              >
+              <input
+                type="number"
+                class="form-control"
+                id="attend"
+                name="attend"
+                min="1"
+                max="5"
+                length="1"
+                value="1"
+              />
+            </div>
+            <div class="mb-3">
+              <label for="status" class="form-label">Confirmation</label>
+              <select name="status" id="status" class="form-select">
+                <option selected>Choose one</option>
+                <option value="Attend">Attend</option>
+                <option value="Not Attend">Not Attend</option>
+              </select>
+            </div>
+            <div class="mt-5 mb-3 text-center">
+              <button class="btn btn-primary">Confirm</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <section id="wishes" class="wishes">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8 col-10 text-center">
+            <h2>Your Wishes</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed fugit
+              voluptates dicta accusantium illo amet.
+            </p>
+          </div>
+        </div>
+
+        <div class="row justify-content-center mt-5">
+          <div class="col-md-8">
+            <div id="disqus_thread"></div>
+            <script>
+              /**
+               *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+               *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+              /*
+    var disqus_config = function () {
+    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+    */
+              (function () {
+                // DON'T EDIT BELOW THIS LINE
+                var d = document,
+                  s = d.createElement("script");
+                s.src = "https://s-g-wedding-invitation.disqus.com/embed.js";
+                s.setAttribute("data-timestamp", +new Date());
+                (d.head || d.body).appendChild(s);
+              })();
+            </script>
+            <noscript
+              >Please enable JavaScript to view the
+              <a href="https://disqus.com/?ref_noscript"
+                >comments powered by Disqus.</a
+              ></noscript
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col text-center">
+            <small class="block"
+              >&copy; 2023 S&G Wedding. All Rights Reserved.</small
+            >
+            <small class="block"
+              >Developed by :
+              <a href="https://www.instagram.com/mariochrstbg/"
+                >@mariochrstbg</a
+              ></small
+            >
+
+            <ul class="mt-3">
+              <li>
+                <a href=""><i class="bi bi-twitter"></i></a>
+              </li>
+              <li>
+                <a href=""><i class="bi bi-instagram"></i></a>
+              </li>
+              <li>
+                <a href=""><i class="bi bi-threads"></i></a>
+              </li>
+              <li>
+                <a href=""><i class="bi bi-tiktok"></i></a>
+              </li>
+              <li>
+                <a href=""><i class="bi bi-pinterest"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bs5-lightbox@1.8.3/dist/index.bundle.min.js"></script>
+
+    <script>
+      simplyCountdown(".simply-countdown", {
+        year: 2024, // required
+        month: 3, // required
+        day: 20, // required
+        hours: 9, // Default is 0 [0-23] integer
+        words: {
+          //words displayed into the countdown
+          days: { singular: "day", plural: "days" },
+          hours: { singular: "hour", plural: "hours" },
+          minutes: { singular: "minute", plural: "minutes" },
+          seconds: { singular: "second", plural: "seconds" },
+        },
+        plural: true, //use plurals
+      });
+    </script>
+
+    <script>
+      const rootElement = document.querySelector(":root");
+
+      function disableScroll() {
+        scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        scrollLeft = window.pageXOffset || document.documentElement.scrollLeft;
+
+        window.onscroll = function () {
+          window.scrollTo(scrollTop, scrollLeft);
+        };
+
+        rootElement.style.scrollBehavior = "auto";
+      }
+
+      function enableScroll() {
+        window.onscroll = function () {};
+        rootElement.style.scrollBehavior = "smooth";
+        localStorage.setItem("opened", "true");
+      }
+
+      if (!localStorage.getItem("opened")) {
+        disableScroll();
+      }
+    </script>
+
+    <script src="./js/modernizr-custom.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
